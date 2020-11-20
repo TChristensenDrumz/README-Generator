@@ -53,10 +53,10 @@ const questions = [
 
 // function to write README file
 function writeToFile(fileName, data) {
-    console.log(toString(data.license));
+    const badge = generateBadge(data.license);
     fs.writeFile(`${fileName}.md`,
 `# ${data.title}
-![](https://img.shields.io/badge/license-${data.license}-green?style=for-the-badge&logo=github)
+![](https://img.shields.io/badge/license-${badge}-green?style=for-the-badge&logo=github)
 ## Description
 ${data.description}
 ## Table of Contents
@@ -102,6 +102,15 @@ function init() {
     inquirer.prompt(questions).then(answers => {
         writeToFile(answers.title, answers);
     });
+}
+
+// function to generate badge
+function generateBadge(data) {
+    console.log(data);
+    return ((data[0] === 'Apache License 2.0') ? 'Apache_License_2.0' 
+            : (data[0] === 'GNU General Public License 3.0') ? 'GNU_License_3.0'
+            : (data[0] === 'MIT License') ? 'MIT_License'
+            : 'BSD_License');
 }
 
 // function call to initialize program
