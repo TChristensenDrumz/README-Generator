@@ -106,7 +106,6 @@ function init() {
 
 // function to generate badge
 function generateBadge(data) {
-    console.log(data);
     return ((data[0] === 'Apache License 2.0') ? 'Apache_License_2.0' 
             : (data[0] === 'GNU General Public License 3.0') ? 'GNU_License_3.0'
             : (data[0] === 'MIT License') ? 'MIT_License'
