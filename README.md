@@ -20,6 +20,7 @@ All dependencies are included in the package.json. In your bash/terminal, use th
 
 ## Usage
 Refer to this tutorial link for usage.
+https://drive.google.com/file/d/1OEuBQviVc1uGFOIahgVwc5xdY7pmUxCS/preview
 
 ## License
 This project is covered under the MIT License.
