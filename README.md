@@ -30,8 +30,8 @@ No contributions are being accepted at this time.
 ## Tests
 -Run using node <br>
 -All questions run and take input <br>
--README file is generated with user inputs <br>
-<span style="color: green;">PASS</span>
+-README file is generated with user inputs <br><br>
+![](https://img.shields.io/badge/TEST-PASSED-green)
 
 ## Questions
 If you have any additional questions, contact me by email or GitHub.
